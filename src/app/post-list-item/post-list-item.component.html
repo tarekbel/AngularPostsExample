@@ -1,0 +1,11 @@
+<div [ngClass]="setServerityLevel()">
+<i class="float-right">{{post.created_at|date:'dd/MM/yyyy'}}</i>
+<h4 class="list-group-item-heading">{{post.title}}</h4>
+<p class="list-group-item-text">{{post.content}}</p>
+<span class="pull-right">
+<button type="button" class="btn btn-success" (click)="loveIt()">love it</button>
+<button type="button" class="btn btn-danger" (click)="dontLoveIt()">don't love it</button>
+<i class="fa fa-heart"></i>
+</span>
+<i class="fas fa-heart"></i>
+</div>
